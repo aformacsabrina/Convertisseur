@@ -2,11 +2,28 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Convertisseur</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="javascript.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="convertisseur">Convertisseur</div><br/>
+        <div>
+            <label for="euro">Montant en euros</label><br/>
+            <input type="text" name="valeur1" id="montant"/>
+            <select id="conversion">
+                <option value="dollars">Dollars</option>
+                <option value="yen">Yen</option> 
+                <option value="livre">Livre Sterling</option>
+            </select><br/><br/>
+            <input type="button" value="valider" onclick="valider()"/><br/>
+            <p id="result"></p>
+        </div>
+        <div>
+            <label for="euro">Montant en euros</label><br/>
+            <input type="text" name="valeur2" id="somme"/>
+            <input type="button" value="convertir" onclick="convertir()"/>
+        </div>
     </body>
 </html>
